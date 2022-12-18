@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.hero {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f2ebe3
+}
+
+:root {
+    --clr-Darkcyan: hsl(158, 36%, 37%);
+    --clr-Darkcyanhover: hsl(159, 35%, 17%);
+    --clr-Verydarkblue: hsl(212, 21%, 14%);
+    --clr-Darkgrayishblue: hsl(228, 12%, 48%);
+    --clr-White: hsl(0, 0%, 100%)
+}
+
+.principal {
+    background-color: var(--clr-White);
+    width: 600px;
+    height: 500px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1;
+    user-select: none
+}
+
+.izquierda {
+    height: 100%;
+    width: 50%
+}
+
+.derecha {
+    width: 50%;
+    height: 100%;
+    padding: 2rem
+}
+
+.imgProducto {
+    height: 100%;
+    width: 100%;
+    border-radius: 14px 0 0 14px;
+    object-fit: cover
+}
+
+.perfume {
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    color: var(--clr-Darkgrayishblue);
+    font-size: 14px
+}
+
+.titulo {
+    text-transform: capitalize;
+    padding-top: 1rem;
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--clr-Verydarkblue)
+}
+
+.contenido {
+    font-size: 16px;
+    text-align: start;
+    padding-top: 1rem;
+    color: var(--clr-Darkgrayishblue)
+}
+
+.precios {
+    display: flex;
+    padding-top: 2rem;
+    align-items: center
+}
+
+.verde {
+    font-size: 40px;
+    color: var(--clr-Darkcyan);
+    font-weight: 700
+}
+
+.gris {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: var(--clr-Darkgrayishblue);
+    padding-left: 1rem;
+    font-weight: 700
+}
+
+.contenedor-boton {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem
+}
+
+.boton {
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    color: var(--clr-White);
+    background-color: var(--clr-Darkcyan);
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    transition: all .5s
+}
+
+.boton:hover {
+    background-color: var(--clr-Darkcyanhover)
+}
